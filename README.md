@@ -1,101 +1,80 @@
-Here’s a **sleek, modern, GitHub-ready README** with better structure, spacing, and clarity 👇
-
----
 
 # 🐹 AskBunny AI
 
-### ⚡ High-Speed Conversational QnA Bot
+### ⚡ Conversational QnA Bot
 
-**AskBunny AI** is a state-of-the-art conversational assistant designed to showcase ultra-fast LLM inference using **Groq’s LPU (Language Processing Unit)** combined with **LangChain’s orchestration power**.
+## 📸 Demo
 
-This isn’t just a chatbot — it **remembers context**, enabling smooth, human-like conversations.
+<p align="center">
+  <img src="./assets/ss.png" width="80%" />
+</p>
+
+<p align="center">
+  <img src="./assets/context.png" width="39%" />
+  <img src="./assets/speed.png" width="39%" />
+</p>
 
 ---
 
-## ✨ Key Features
+## 🚀 Overview
 
-* ⚡ **Lightning-Fast Inference**
-  Powered by **Groq Cloud** for near-instant responses.
+**AskBunny AI** is a  conversational assistant built using **Groq’s ultra-fast LPU inference** and **LangChain orchestration**.
+
+It delivers:
+
+* 🧠 **Context-aware conversations**
+* 🎨 **Clean, modern chat UI**
+
+---
+
+## ✨ Features
+
+
 
 * 🧠 **Contextual Memory**
-  Maintains conversation flow using **LangChain message state management**.
+  Remembers previous messages for natural conversations
 
-* 🎨 **Clean UI/UX**
-  Built with **Streamlit chat components** for a sleek, app-like experience.
+* 🎨 **Modern UI/UX**
+  Built with Streamlit chat components
 
-* 🔐 **Security First**
-  Uses **python-dotenv** to securely manage API keys and environment variables.
+* 🔐 **Secure Configuration**
+  Uses `python-dotenv` to protect API keys
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Layer                 | Technology           |
-| --------------------- | -------------------- |
-| **Frontend**          | Streamlit            |
-| **LLM Orchestration** | LangChain            |
-| **Inference Engine**  | Groq Cloud           |
-| **Model**             | Llama 3.3 (via Groq) |
-| **Environment**       | Conda + Dotenv       |
+| Layer         | Technology     |
+| ------------- | -------------- |
+| Frontend      | Streamlit      |
+| Orchestration | LangChain      |
+| Inference     | Groq Cloud     |
+| Model         | Llama 3.3      |
+| Env           | Conda + Dotenv |
 
 ---
 
 ## ⚙️ How It Works
 
-AskBunny AI follows a **stateful execution flow**:
+### 🗂️ Session Persistence
 
-### 1. 🗂️ Session Persistence
+* Uses `st.session_state` to store chat history
 
-* Uses `Streamlit.session_state` as the main data store
-* Stores conversation as a list of:
+### 💬 Message Flow
 
-  * `HumanMessage`
-  * `AIMessage`
+* Each user input is appended to the message list
 
-### 2. 💬 Message Handling
+### 🔄 Context Injection
 
-* Each user input is appended to the message history
+* Entire conversation is sent to the model
+* Enables follow-up understanding like:
 
-### 3. 🔄 Context Injection
+  > “Who is he?”
 
-* Entire conversation history is sent to the model
-* Enables understanding of follow-ups like:
+### 🎭 Smart Rendering
 
-  > *“Who is he?”*
+* Dynamically renders:
 
-### 4. 🎭 Smart Rendering
+  * User messages
+  * AI responses
 
-* UI dynamically detects message types
-* Renders:
-
-  * **User messages**
-  * **Assistant responses**
-    as clean chat bubbles
-
----
-
-## 🚀 Why AskBunny?
-
-> **Speed + Memory + Simplicity**
-
-* ⚡ Faster than traditional LLM setups
-* 🧠 Maintains real conversational context
-* 🧩 Clean and minimal architecture
-* 🎯 Perfect for learning modern AI stack integration
-
----
-
-## 📌 Future Improvements (Optional Ideas)
-
-* 🔊 Voice input/output
-* 🌐 Multi-language support
-* 🧾 Chat export (PDF / Markdown)
-* 🧠 Long-term memory (vector DB)
-
----
-
-If you want, I can also:
-
-* 🔥 Add **installation steps + run commands**
-* 📦 Add **folder structure**
-* 🌍 Make it **portfolio-level README (with badges + screenshots)**
