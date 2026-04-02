@@ -24,7 +24,7 @@ if "messages" not in st.session_state:
 for message in st.session_state.messages:
     role = "user" if isinstance(message,HumanMessage) else "assistant"
     with st.chat_message(role):
-        st.markdown(message['content'])
+        st.markdown(message.content)
 
 
 query = st.chat_input("Ask anything...")
