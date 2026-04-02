@@ -9,11 +9,6 @@
   <img src="./assets/ss.png" width="80%" />
 </p>
 
-<p align="center">
-  <img src="./assets/context.png" width="39%" />
-  <img src="./assets/speed.png" width="39%" />
-</p>
-
 ---
 
 ## 🚀 Overview
